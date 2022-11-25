@@ -1,0 +1,13 @@
+doctype html
+include includes/head.pug
+body(onload="load()")
+    include includes/nav.pug
+    #content
+        span.header
+            h1 Space time BR
+            p Apenas mais uma bot list.
+        #searchMore
+            | Você gostaria de 
+            a(href='/bots/search/') procurar alguns bots
+        #cards
+            span#loading Carregando...
